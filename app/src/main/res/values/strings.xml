@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Sales</string>
+    <string name="msg_list_sales_empty">Não existe pedidos\nregistrado!</string>
+    <string name="title_orders">Pedidos</string>
+    <string name="title_new_order">Novo pedido</string>
+    <string name="client_name">Nome do cliente</string>
+    <string name="product_name">Nome do produto</string>
+    <string name="add_product">Adicionar Produto</string>
+    <string name="save">Salvar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="product">Produto</string>
+    <string name="quantity">Quantidade</string>
+    <string name="unit_value">Valor unitário</string>
+    <string name="include">Incluir</string>
+    <string name="msg_product_name">Nome do produto: %s</string>
+    <string name="msg_quantity_value">Quantidade: %d</string>
+    <string name="msg_unit_value">Valor unitário: %s</string>
+    <string name="msg_total_value">Valor total: %s</string>
+    <string name="title_order">Pedido</string>
+    <string name="products">Produtos</string>
+    <string name="msg_order_number">Pedido #%d</string>
+    <string name="msg_qtd_total_items">Qtd. total de itens: %d</string>
+    <string name="msg_value_total_order">Valor total do pedido: %s</string>
+</resources>

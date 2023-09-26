@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/frag_home">
+
+    <fragment
+        android:id="@+id/frag_home"
+        android:name="com.br.sales.ui.fragment.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/to_new_order"
+            app:destination="@id/frag_new_order" />
+
+        <action
+            android:id="@+id/to_order_detail"
+            app:destination="@id/frag_order_detail" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frag_new_order"
+        android:name="com.br.sales.ui.fragment.NewOrderFragment"
+        android:label="NewOrderFragment"
+        tools:layout="@layout/fragment_new_order">
+
+        <action
+            android:id="@+id/to_new_product"
+            app:destination="@id/frag_new_product" />
+
+        <action
+            android:id="@+id/pop_up_to_home"
+            app:popUpTo="@id/frag_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frag_new_product"
+        android:name="com.br.sales.ui.fragment.NewProductFragment"
+        android:label="NewProductFragment"
+        tools:layout="@layout/fragment_new_product">
+
+        <action
+            android:id="@+id/pop_up_to_new_order"
+            app:popUpTo="@id/frag_new_order" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/frag_order_detail"
+        android:name="com.br.sales.ui.fragment.OrderDetailFragment"
+        android:label="OrderDetailFragment"
+        tools:layout="@layout/fragment_order_detail">
+
+        <argument
+            android:name="order"
+            app:argType="com.br.sales.data.Order" />
+
+    </fragment>
+
+</navigation>
